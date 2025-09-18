@@ -1,0 +1,16 @@
+name: diyi workflow
+
+on: [push]
+
+jobs:
+	greet: 
+	name: Nihao zhe shi ni de diyi workflow
+runs-on: ububtu linux
+	
+steps:
+	-name: checkout code
+-uses: actions/checkout@v5
+
+name: Say hello
+run: |
+	echo "Nihao from GitHub actions!"
